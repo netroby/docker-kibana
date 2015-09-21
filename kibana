@@ -17,5 +17,5 @@ DIR=$(dirname "${SCRIPT}")/..
 NODE=${DIR}/node/bin/node
 SERVER=${DIR}/src/bin/kibana.js
 
-CONFIG_PATH="${DIR}/config/kibana.yml" NODE_ENV="production" exec "${NODE}" --max_old_space_size=128  ${SERVER} ${@}
+CONFIG_PATH="${DIR}/config/kibana.yml" NODE_ENV="production" exec "${NODE}" --max_old_space_size=128 ${SERVER} ${@}
 

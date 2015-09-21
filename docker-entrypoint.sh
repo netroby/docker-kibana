@@ -14,7 +14,7 @@ if [ "$1" = 'kibana' ]; then
         echo >&2
     fi
 
-    set -- gosu kibana "$@"
+    set -- gosu kibana   "$@"
 fi
 
 exec "$@"
