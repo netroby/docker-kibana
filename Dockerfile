@@ -28,7 +28,8 @@ RUN set -x \
 ENV PATH /opt/kibana/bin:$PATH
 
 COPY ./docker-entrypoint.sh /
-COPY ./kibana	/opt/kibana/bin/
+COPY ./kibana /opt/kibana/bin/
+
 EXPOSE 5601
 ENTRYPOINT ["/docker-entrypoint.sh"]
 CMD ["kibana"]
