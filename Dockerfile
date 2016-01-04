@@ -15,7 +15,7 @@ RUN arch="$(dpkg --print-architecture)" \
 	&& rm /usr/local/bin/gosu.asc \
 	&& chmod +x /usr/local/bin/gosu
 
-ENV KIBANA_VERSION 4.1.1
+ENV KIBANA_VERSION 4.1.4
 ENV KIBANA_SHA1 d43e039adcea43e1808229b9d55f3eaee6a5edb9
 
 RUN set -x \
